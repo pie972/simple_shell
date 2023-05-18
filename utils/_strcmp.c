@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * compare - function that compares two strings
+ * _strcmp - function that compares two strings
  * @varname: is a char
  * @dirname: is a char
  * Return: 1
  */
 
-int compare(char *varname, char *dirname)
+int _strcmp(char *varname, char *dirname)
 {
 	int i;
 
