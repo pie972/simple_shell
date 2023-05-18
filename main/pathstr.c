@@ -1,4 +1,4 @@
-#include<main.h>
+#include "main.h"
 
 /**
  * pathstr - function that prints the path string
