@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _getenv - function that gets the path in the environ
+ * _getenv - function that gets the path in the environment
  * @environ: global variable
  * @dirname: is a char
  * Return: final or null
