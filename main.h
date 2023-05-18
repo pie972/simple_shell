@@ -23,12 +23,6 @@ char *_getenv(char **environ, char *dirname);
 void builtins(char *line, char **args, char **env, int *ex_st);
 int execute(char **parse);
 
-/* helpers.c: helper functions */
-char *read_line(void);
-char **splits(char *line, char *delim);
-char *if_exists(char **environ);
-extern char **environ;
-
 /* strings.c: functions related to strings */
 unsigned int _strlen(char *s);
 char *_strdup(char *str);
@@ -40,6 +34,18 @@ int _putchar(char c);
 void _puts(char *str);
 void print_str(char *s);
 void print_int(int *tal);
+char *pathstr(char *right, char *first);
 char *args_path(char **parse, char **tokens);
+
+/* helpers.c: helper functions */
+void no_nl(char *l);
+void free_grid(char **grid, int height);
+int special_char(char *buffer, ssize_t bytes, int *ex_st);
+
+/* more functions */
+char *read_line(void);
+char **splits(char *line, char *delim);
+char *if_exists(char **environ);
+extern char **environ;
 
 #endif
