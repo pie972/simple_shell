@@ -1,7 +1,7 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef MAIN_H
+#define MAIN_H
 
-/* #define TRUE (1 == 1) */
+#define TRUE (1 == 1)
 
 #include <stdio.h>
 #include <stdlib.h>
