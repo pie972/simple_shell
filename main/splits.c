@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _realloc - reallocate memory
+ * _realloc - function that reallocate memory
  * @ptr: void variable pointer
  * @old_size: integer
  * @new_size: integer
