@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * read_line - function that reads the command line
+ * read_line - reads the command line
  * Return: line
  */
 
