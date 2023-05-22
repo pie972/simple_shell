@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * length - function that checks the number of characters
+ * length - function checks the number of characters
  * @str: is a char
  * Return: str
  */
