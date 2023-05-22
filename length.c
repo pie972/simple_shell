@@ -8,9 +8,9 @@
 
 char *length(char *str)
 {
-	int i;
+	int n;
 
-	for (i = 0; str[i] != '='; i++)
+	for (n = 0; str[n] != '='; n++)
 		;
-	return (str + i + 1);
+	return (str + n + 1);
 }
