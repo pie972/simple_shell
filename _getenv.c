@@ -1,27 +1,27 @@
 #include "main.h"
 
 /**
- * _getenv - function that gets the path in the environment
+ * _getenv - function gets the path in the environment
  * @environ: global variable
- * @dirname: is a char
+ * @dirname: char
  * Return: final or null
  */
 
 char *_getenv(char **environ, char *dirname)
 {
-	int k, j;
+	int n, m;
 	char *varname, *final;
 
-	for (j = 0; environ[j]; j++)
+	for (m = 0; environ[m]; m++)
 	{
 		varname = malloc(1024);
 
-		for (k = 0; environ[j][k] != '='; k++)
-			varname[k] = environ[j][k];
+		for (n = 0; environ[m][n] != '='; n++)
+			varname[n] = environ[m][n];
 
 		if (compare(varname, dirname))
 		{
-			final = length(environ[j]);
+			final = length(environ[m]);
 			free(varname);
 			return (final);
 
