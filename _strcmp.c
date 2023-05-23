@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * _strcmp - function that compares two strings
- * @varname: is a char
- * @dirname: is a char
+ * _strcmp - function comparing two strings
+ * @varname: char
+ * @dirname: char
  * Return: 1
  */
 
 int _strcmp(char *varname, char *dirname)
 {
-	int i;
+	int j;
 
-	for (i = 0; dirname[i] != '\0'; i++)
+	for (j = 0; dirname[j] != '\0'; j++)
 	{
-		if (dirname[i] != varname[i])
+		if (dirname[j] != varname[j])
 			return (0);
 	}
 	return (1);
