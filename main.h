@@ -47,5 +47,6 @@ char *read_line(void);
 char **splits(char *line, char *delim);
 char *if_exists(char **environ);
 extern char **environ;
-
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+char *lenght(char *str);
 #endif
