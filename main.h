@@ -33,9 +33,9 @@ char *_strcat(char *dest, char *src);
 int _putchar(char c);
 void _puts(char *str);
 void print_str(char *s);
-void print_int(int *tal);
+void print_int(int *tally);
 char *pathstr(char *right, char *first);
-char *args_path(char **parse, char **tokens);
+char *args_path(char **parse, char **new);
 
 /* helpers.c: helper functions */
 void no_nl(char *l);
