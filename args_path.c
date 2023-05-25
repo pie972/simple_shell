@@ -16,9 +16,9 @@ char *args_path(char **parse, char **new)
 	for (i = 0; new[i]; i++)
 	{
 		total = (char *)malloc(60);
-		strcat(total, new[i]);
-		strcat(total, "/");
-		strcat(total, parse[0]);
+		_strcat(total, new[i]);
+		_strcat(total, "/");
+		_strcat(total, parse[0]);
 
 		if (stat(total, &status) == 0)
 		{
@@ -26,10 +26,10 @@ char *args_path(char **parse, char **new)
 				;
 			cat = (char **)malloc(sizeof(char *) * (k + 1));
 			cat[k] = NULL;
-			cat[0] = strdup(total);
+			cat[0] = _strdup(total);
 
 			for (j = 1; parse[j]; j++)
-				cat[j] = strdup(parse[j]);
+				cat[j] = _strdup(parse[j]);
 			execute(cat);
 			return (total);
 		}
