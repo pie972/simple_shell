@@ -19,7 +19,7 @@ char *_getenv(char **environ, char *dirname)
 		for (n = 0; environ[m][n] != '='; n++)
 			varname[n] = environ[m][n];
 
-		if (compare(varname, dirname))
+		if (_strcmp(varname, dirname))
 		{
 			final = length(environ[m]);
 			free(varname);
