@@ -20,7 +20,7 @@ char **find_path(char **environ);
 char *_getenv(char **environ, char *dirname);
 
 /* built-ins & execute function */
-void builtins(char *line, char **args, char **env, int *ex_st);
+void builtins(char *line, char **args, char **env, char *ex_st);
 int execute(char **parse);
 
 /* strings.c: functions related to strings */
@@ -48,5 +48,5 @@ char **splits(char *line, char *delim);
 char *if_exists(char **environ);
 extern char **environ;
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-char *lenght(char *str);
+char *length(char *str);
 #endif
