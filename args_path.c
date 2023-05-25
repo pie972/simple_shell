@@ -15,7 +15,7 @@ char *args_path(char **parse, char **new)
 
 	for (i = 0; new[i]; i++)
 	{
-		total = (char *)malloc(60);
+		total = malloc(60);
 		_strcat(total, new[i]);
 		_strcat(total, "/");
 		_strcat(total, parse[0]);
@@ -24,7 +24,7 @@ char *args_path(char **parse, char **new)
 		{
 			for (k = 0; parse[k] != NULL && *parse[k] != '\0'; k++)
 				;
-			cat = (char **)malloc(sizeof(char *) * (k + 1));
+			cat = malloc(sizeof(char *) * (k + 1));
 			cat[k] = NULL;
 			cat[0] = _strdup(total);
 
