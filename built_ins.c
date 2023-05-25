@@ -8,7 +8,7 @@
  * @ex_st: the exit status
  * Return: void
  */
-void builtins(char *line, char **args, char **env, char *ex_st)
+void builtins(char *line, char **args, char **env, int *ex_st)
 {
 
 	if (_strcmp(args[0], "exit") == 0)
