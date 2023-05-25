@@ -31,8 +31,7 @@ char *args_path(char **parse, char **new)
 			for (j = 1; parse[j]; j++)
 				cat[j] = _strdup(parse[j]);
 			execute(cat);
-			free(total);
-			return (cat[0]);
+			return (total);
 		}
 		free(total);
 	}
