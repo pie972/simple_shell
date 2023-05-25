@@ -15,21 +15,21 @@ char *args_path(char **parse, char **new)
 
 	for (i = 0; new[i]; i++)
 	{
-		total = malloc(60);
-		_strcat(total, new[i]);
-		_strcat(total, "/");
-		_strcat(total, parse[0]);
+		total = (char *)malloc(60);
+		strcat(total, new[i]);
+		strcat(total, "/");
+		strcat(total, parse[0]);
 
 		if (stat(total, &status) == 0)
 		{
-			for (k = 0; *parse[k] != NULL && *parse[k] != '\0'; k++)
+			for (k = 0; parse[k] != NULL && *parse[k] != '\0'; k++)
 				;
-			cat = malloc(sizeof(char *) * (k + 1));
+			cat = (char **)malloc(sizeof(char *) * (k + 1));
 			cat[k] = NULL;
-			cat[0] = _strdup(total);
+			cat[0] = strdup(total);
 
 			for (j = 1; parse[j]; j++)
-				cat[j] = _strdup(parse[j]);
+				cat[j] = strdup(parse[j]);
 			execute(cat);
 			return (total);
 		}
